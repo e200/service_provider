@@ -1,4 +1,4 @@
-import 'package:get_it/get_it.dart';
+part of 'service_provider.dart';
 
 class IoC {
   static IoC container = IoC();
