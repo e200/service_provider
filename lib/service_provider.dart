@@ -2,18 +2,28 @@ library service_provider;
 
 import 'ioc.dart';
 
-class ServiceProvider {
+class ServiceProviders {
   static final _providers = [];
 
-  ServiceProvider add(ServiceProviderContract serviceProvider, [String name]) {
+  static final _container = IoC.container;
+
+  ServiceProviders add(ServiceProvider serviceProvider) {
     _providers.add(serviceProvider);
 
     return this;
   }
 
-  void dispose() {}
+  static boot() {
+    _providers.forEach((_provider) {
+      _provider.register(_container);
+    });
+  }
+
+  void dispose() {
+    _providers.clear();
+  }
 }
 
-abstract class ServiceProviderContract {
+abstract class ServiceProvider {
   void register(IoC container);
 }
