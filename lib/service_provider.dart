@@ -15,7 +15,7 @@ class ServiceProviders {
     return this;
   }
 
-  static boot() {
+  static boot() async {
     _providers.forEach((_provider) {
       _provider.register(_container);
     });
