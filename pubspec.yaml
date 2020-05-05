@@ -1,8 +1,7 @@
 name: service_provider
-description: A new Flutter package project.
+description: Flutter service provider
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/e200/service_provider
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -14,11 +13,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  get_it: ^4.0.2
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter.
 flutter:
 
   # To add assets to your package, add an assets section, like this:
