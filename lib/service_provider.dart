@@ -1,6 +1,8 @@
 library service_provider;
 
-import 'ioc.dart';
+import 'package:get_it/get_it.dart';
+
+part 'ioc.dart';
 
 class ServiceProviders {
   static final _providers = [];
