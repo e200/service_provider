@@ -5,7 +5,7 @@ class IoC {
 
   static final _getIt = GetIt.I;
 
-  T get<T>() {
+  static T get<T>() {
     return _getIt.get<T>();
   }
 
