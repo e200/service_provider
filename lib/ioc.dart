@@ -17,7 +17,7 @@ class IoC {
     _getIt.registerSingletonAsync<T>(factoryFunction);
   }
 
-  void registerWithDependence<T>(
+  void registerWithDependencies<T>(
     Function() factoryFunction, {
     Iterable<Type> dependsOn,
   }) {
